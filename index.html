@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>STARTUP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -12,6 +13,7 @@
         overflow: hidden; /* Prevent scrolling for the 'book' feel */
         background-color: #1E1E2F;
         color: #F0F0F0;
+        touch-action: manipulation;
       }
       /* Custom scrollbar for inner content */
       .custom-scroll::-webkit-scrollbar {
@@ -26,6 +28,11 @@
       }
       .custom-scroll::-webkit-scrollbar-thumb:hover {
         background: #FF6F61;
+      }
+      /* Ensure proper height on mobile */
+      html, body, #root {
+        height: 100%;
+        width: 100%;
       }
     </style>
 
@@ -43,7 +50,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-Cq98XYlv.js"></script>
+  <script type="module" crossorigin src="/assets/index-C7Zf13_8.js"></script>
 </head>
   <body>
     <div id="root"></div>
